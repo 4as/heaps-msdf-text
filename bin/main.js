@@ -7304,7 +7304,7 @@ h2d_OutlinedText.prototype = $extend(h2d_Text.prototype,{
 		return value;
 	}
 	,get_thickness: function() {
-		return this._thickness;
+		return 1 - this._thickness;
 	}
 	,set_thickness: function(value) {
 		if(value < 0) {
@@ -7312,7 +7312,7 @@ h2d_OutlinedText.prototype = $extend(h2d_Text.prototype,{
 		} else if(value > 1) {
 			value = 1;
 		}
-		this._thickness = value;
+		this._thickness = 1 - value;
 		this.__syncOutline();
 		return value;
 	}
@@ -7341,7 +7341,7 @@ h2d_OutlinedText.prototype = $extend(h2d_Text.prototype,{
 		return value;
 	}
 	,get_outlineThickness: function() {
-		return this._outlineThickness;
+		return 1 - this._outlineThickness;
 	}
 	,set_outlineThickness: function(value) {
 		if(value < 0) {
@@ -7349,7 +7349,7 @@ h2d_OutlinedText.prototype = $extend(h2d_Text.prototype,{
 		} else if(value > 1) {
 			value = 1;
 		}
-		this._outlineThickness = value;
+		this._outlineThickness = 1 - value;
 		this.__syncOutline();
 		return value;
 	}

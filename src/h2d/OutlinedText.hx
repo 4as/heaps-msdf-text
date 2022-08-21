@@ -62,11 +62,11 @@ class OutlinedText extends Text {
 		Percentile value (0.0 - 1.0) of the distance cutoff point (same as 'alphaCutoff' in `BitmapFont.toSdfFont`) 
 	**/
 	public var thickness(get, set):Float;
-	function get_thickness():Float { return _thickness; }
+	function get_thickness():Float { return 1 - _thickness; }
 	function set_thickness(value:Float):Float {
 		if( value < 0 ) value = 0;
 		else if( value > 1 ) value = 1;
-		_thickness = value;
+		_thickness = 1 - value;
 		__syncOutline();
 		return value;
 	}
@@ -109,11 +109,11 @@ class OutlinedText extends Text {
 		Outlines are rendered in the range between this value and the `thickness` value.
 	**/
 	public var outlineThickness(get, set):Float;
-	function get_outlineThickness():Float { return _outlineThickness; }
+	function get_outlineThickness():Float { return 1 - _outlineThickness; }
 	function set_outlineThickness(value:Float):Float {
 		if( value < 0 ) value = 0;
 		else if( value > 1 ) value = 1;
-		_outlineThickness = value;
+		_outlineThickness = 1 - value;
 		__syncOutline();
 		return value;
 	}

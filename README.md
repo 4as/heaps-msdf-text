@@ -18,7 +18,7 @@ Finally you can create the `OutlinedText` object and pass into it the previously
 `var txt:OutlinedText = new OutlinedText( fnt );`
 By default `OutlinedText` does not display any outlines, so you need to enable them by setting the `outline` property to `true`. Now only thing left to do is to mess around with `OutlinedText`'s properties to create the desired look.
 
-*Thickness* controls the cut off point for the font rendering. It's the same value as `alphaCutoff` passed to the `toSdfFont` method.
+*Thickness* controls the cut off point for the font rendering. It's the same value as `alphaCutoff` passed to the `toSdfFont` method but used with reversed logic (ie. `alphaCutoff = 0.2` will result in `thickness = 0.8`).
 ![Thickness example!](/docs/thickness.png)
 
 *Smoothness* controls the blur on the edges of the rendered font. It's the same value as `smoothing` passed to the `toSdfFont` method.
