@@ -1,0 +1,15 @@
+-cp src-example
+-cp src
+-lib heaps
+-main Main
+-debug
+--each
+--js bin/main.js
+--next
+--swf bin/main.swf
+--swf-version 11.6
+--swf-header 800:600:60:0xdddddd
+--next
+-lib hlsdl
+-hl main.hl
+-D windowSize=800x600
