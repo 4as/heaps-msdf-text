@@ -33,3 +33,4 @@ By default `OutlinedText` does not display any outlines, so you need to enable t
 ##### 4. Miscellaneous stuff  
 Setting the `font` property will instantly reset all outline properties on the `OutlinedText` object. This allows `OutlinedText` to directly replace any `Text` without (hopefully) any changes.  
 If you want to see some examples on how to use `OutlinedText` check out the *src-example* folder.  
+You can also check out the results live over here: [4as.github.io/heaps-msdf-text](https://4as.github.io/heaps-msdf-text/)  
